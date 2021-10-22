@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <form class="contanct-form">
+        <label for="name"> Имя </label>
+        <input type="text" id="name" />
+
+        <label for="last-name">Фамилия</label>
+        <input type="text" id="last-name" />
+
+        <label for="phone">Номер телефона</label>
+        <input type="text" id="phone" />
+        <button id="btn">Create contact</button>
+    </form>
+    <h1>Контакты</h1>
+    <div class="container">
+        <input type="text" id="search-bar" placeholder="Поиск контактов" />
+    </div>
+    <div class="pagination">
+        <button id="previous">Prev</button>
+        <div id="pages"></div>
+        <button id="next">Next</button>
+    </div>
+    <div id="contacts"></div>
+    <div id="modal">
+        <button id="close-btn">X</button>
+        <label for="modal-name"> Имя </label>
+        <input type="text" id="modal-name" />
+
+        <label for="modal-lastname">Фамилия</label>
+        <input type="text" id="modal-lastname" />
+
+        <label for="modal-phone">Номер телефона</label>
+        <input type="text" id="modal-phone" />
+        <button id="save">Сохранить</button>
+    </div>
+    <div id="background"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

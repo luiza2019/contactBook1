@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    height: 100vh;
+}
+
+form, #modal.active {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #9a81d6;
+    color: rgb(66, 0, 104);
+}
+
+label {
+    margin: 5px auto;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+input {
+    width: 250px;
+    margin: 0 auto;
+    height: 35px;
+    border: 1px solid #571568;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: 2px solid rgb(28, 0, 128);
+}
+
+form button, #modal button {
+    margin: 20px auto;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #571568;
+    color: rgb(66, 0, 104);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+form button:focus, #modal button:focus {
+    outline: 2px solid rgb(28, 0, 128);
+}
+
+#contacts {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(114, 133, 219);
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+#contacts p {
+    color: #000;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px blue;
+    border-radius: 15px;
+    margin: 10px 0;
+    width: 80%;
+    background-color: #fff;
+}
+
+#contacts button:last-child {
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255);
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+#contacts button:first-child {
+    border: none;
+}
+
+#contacts img {
+    float: right;
+    width: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 300px;
+    background-color: #fff;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+#modal button:first-child {
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#background.active {
+    display: block;
+}
+
+#search-bar {
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#pages {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#pages button {
+    border: 1px solid #9a81d6;
+    color: #571568;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.pagination button {
+    border: 1px solid #9a81d6;
+    color: #571568;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.pagination button:first-child, .pagination button:last-child {
+    width: 50px;
+}
